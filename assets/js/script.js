@@ -18,3 +18,25 @@ async function updatePrivileges() {
     console.log(url)
     window.location.href = url.url
   }
+
+async function login() {
+let result = await fetch('/api/login', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({
+        username: document.getElementById('username').value,
+        password: document.getElementById('password').value
+    })
+})
+
+let token = await result.json()
+console.log(token)
+if (token.token != "Fail") {
+    window.location.href = '/JpkP0KKXlV78jx6fF1Yi/dashboard?auth=' + token.token
+} else {
+    document.getElementById('output').innerText = "Sorry, wrong credentials! Try again."
+}
+}
