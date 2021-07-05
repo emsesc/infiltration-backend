@@ -58,8 +58,8 @@ async function accountSet() {
 
     let res = await result.json()
     if (res.flag != "Fail") {
-        document.getElementById('p1').innerText = res.flag
-        document.getElementById('title').innerText = res.username
+        document.getElementById('p1').innerHTML = res.flag
+        document.getElementById('title').innerHTML = res.username
         document.getElementById('bird').src = "/assets/img/computer.jpeg"
     }
 }

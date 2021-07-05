@@ -33,7 +33,7 @@ router.post('/api/login', jsonParser, function(req, res) {
 
 router.post('/api/account', jsonParser, function(req, res) {
   if (req.body.cookie == "YWRtaW4=") {
-      res.send({flag : 'Flag: tw1tt3r_tw0tt3r_vulnerableuser', username : 'Welcome, admin!'})
+      res.send({flag : '<b>Flag:</b> tw1tt3r_tw0tt3r_:)', username : '<span style="font-size: 60px;">Welcome, <b>admin</b>!</span>'})
   } else {
     res.send({flag : 'Fail'})
   }
