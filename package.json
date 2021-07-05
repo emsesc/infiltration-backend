@@ -4,6 +4,7 @@
   "description": "## How to play This is a classic CTF challenge, CyberStart style. All you need is a browser, inspect element, and some perserverance.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
