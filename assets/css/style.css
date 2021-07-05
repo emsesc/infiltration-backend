@@ -308,5 +308,10 @@ h1 {
 }
 
 .c-well img {
-	margin: 0 auto 32px
+	margin: 0 auto 32px;
+	border-radius: 30%
 }
+
+a:hover {
+	color: #286fa0;
+  }
