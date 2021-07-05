@@ -31,6 +31,14 @@ router.post('/api/login', jsonParser, function(req, res) {
   }
 });
 
+router.post('/api/account', jsonParser, function(req, res) {
+  if (req.body.cookie == "YWRtaW4=") {
+      res.send({flag : 'Flag: tw1tt3r_tw0tt3r_vulnerableuser', username : 'Welcome, admin!'})
+  } else {
+    res.send({flag : 'Fail'})
+  }
+});
+
 router.get('/JpkP0KKXlV78jx6fF1Yi/dashboard', function(req, res) {
   if (req.query.auth == "SlbCStyYUL1cg90HBOKkepDEPeLdKvkD") {
     res.sendFile(path + '/pages/dashboard.html')
