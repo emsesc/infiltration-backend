@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Helvetica);
+.h-mt-5 {
+	margin-top: 64px!important
+}
+
+.h-text-center {
+	text-align: center!important
+}
+
+body {
+	background-color: #286fa0
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	transition: color .2s
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%
+}
+
+@media only screen and (min-width:960px) {
+	.container {
+		max-width: 400px
+	}
+}
+
+html {
+	box-sizing: border-box
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit
+}
+
+body {
+	margin: 0
+}
+
+a {
+	background-color: transparent
+}
+
+img {
+	border: 0;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle
+}
+
+button,
+input {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0
+}
+
+button,
+input {
+	line-height: normal
+}
+
+button {
+	text-transform: none
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	outline-offset: -2px
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+h1 {
+	margin: 0
+}
+
+body {
+	font-family: "Dosis",helvetica,arial,sans-serif;
+	font-size: 18px;
+	color: #000
+}
+
+h1 {
+	font-size: 20px;
+	font-family: "Dosis",helvetica,arial,sans-serif;
+	margin-bottom: 20px;
+	font-weight: 500
+}
+
+.h1 {
+	font-size: 20px;
+	font-family: "Dosis",helvetica,arial,sans-serif;
+	margin-bottom: 20px
+}
+
+.c-btn {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	padding: 0;
+	color: #fff;
+	color: #000;
+	background-color: #b8b8c0;
+	transition: background-color .2s;
+	align-items: center;
+	border-radius: 0;
+	box-sizing: border-box;
+	display: inline-flex;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 500;
+	justify-content: center;
+	min-height: 42px;
+	padding: 0 16px;
+	text-align: center;
+	text-decoration: none
+}
+
+.c-btn:hover {
+	background-color: #9e9ea7
+}
+
+.c-btn:active,
+.c-btn:focus {
+	box-shadow: 0 0 0 4px #fcfcfc;
+	outline: 0
+}
+
+.c-btn:disabled,
+.c-btn[disabled] {
+	background-color: #eee;
+	color: #ccc;
+	cursor: not-allowed
+}
+
+.c-btn:disabled:hover,
+.c-btn[disabled]:hover {
+	background-color: #eee
+}
+
+.c-btn:not(:last-of-type) {
+	margin-right: 16px
+}
+
+.c-btn--primary {
+	color: #fff;
+	background-color: #393940;
+	transition: background-color .2s
+}
+
+.c-btn--primary:hover {
+	background-color: #212125
+}
+
+.c-btn--primary:active,
+.c-btn--primary:focus {
+	box-shadow: 0 0 0 4px #767683;
+	outline: 0
+}
+
+.c-btn--primary:disabled,
+.c-btn--primary[disabled] {
+	background-color: #eee;
+	color: #ccc;
+	cursor: not-allowed
+}
+
+.c-btn--primary:disabled:hover,
+.c-btn--primary[disabled]:hover {
+	background-color: #eee
+}
+
+.c-form-label {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 8px
+}
+
+.c-form-input {
+	border-color: #212125;
+	transition: border .2s, color .2s, box-shadow .2s, background-color .2s;
+	border-color: #212125;
+	border-radius: 0;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	display: block;
+	min-height: 42px;
+	padding: 0 12px;
+	width: 100%
+}
+
+.c-form-input::placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input::-webkit-input-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input::-moz-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:-ms-input-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:-moz-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:hover {
+	border-color: #000
+}
+
+.c-form-input:active,
+.c-form-input:focus {
+	border-color: #000;
+	box-shadow: 0 0 0 4px #6a6a75;
+	outline: 0
+}
+
+.c-form-input:disabled,
+.c-form-input[disabled] {
+	background: #e9e9eb;
+	border-color: #b8b8c0;
+	pointer-events: none;
+	box-shadow: none
+}
+
+.c-form-input:disabled::placeholder,
+.c-form-input[disabled]::placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:disabled::-webkit-input-placeholder,
+.c-form-input[disabled]::-webkit-input-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:disabled::-moz-placeholder,
+.c-form-input[disabled]::-moz-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:disabled:-ms-input-placeholder,
+.c-form-input[disabled]:-ms-input-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-form-input:disabled:-moz-placeholder,
+.c-form-input[disabled]:-moz-placeholder {
+	color: #83838f;
+	font-style: italic
+}
+
+.c-well {
+	border-radius: 0;
+	border-style: solid;
+	border-width: 5px;
+	display: block;
+	padding: 32px;
+	width: 100%;
+	background-color: #fff;
+	border: 0
+}
+
+.c-well img {
+	margin: 0 auto 32px
+}
