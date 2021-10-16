@@ -29,7 +29,8 @@ router.get('/api/code', function(req, res) {
 });
 
 router.post('/api/unlock', jsonParser, function(req, res) {
-    if (req.body == "vVPfM9GcHD") {
+    console.log(req.body)
+    if (req.body.code == "vVPfM9GcHD") {
         res.send({key: "b4d_4ppl3s_4tw"})
     }
 });
