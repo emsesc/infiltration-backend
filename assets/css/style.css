@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: #286fa0
+	background-color: #dc143c
 }
 
 a {
@@ -319,9 +319,9 @@ h1 {
 }
 
 a:hover {
-	color: #286fa0;
+	color: #dc143c;
   }
 
   button:hover {
-	color: #286fa0;
+	color: #dc143c;
   }
