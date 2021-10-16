@@ -27,8 +27,7 @@ let result = await fetch('/api/login', {
         'Content-Type': 'application/json'
         },
     body: JSON.stringify({
-        username: document.getElementById('username').value,
-        password: document.getElementById('password').value
+        key: document.getElementById('username').value,
     })
     })
 
@@ -63,19 +62,3 @@ async function accountSet() {
         document.getElementById('bird').src = "/assets/img/computer.jpeg"
     }
 }
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }

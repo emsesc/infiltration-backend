@@ -13,29 +13,32 @@ app.use('/', router);
 app.use('/assets', express.static(path + '/assets'))
   
 router.get('/',function(req, res){
-  res.sendFile(path + '/pages/index.html');
+  res.sendFile(path + '/pages/login.html');
 });
 
-router.post('/api/developers', jsonParser, function(req, res) {
-    if (req.body.token == "d3v3l0p3rsrUl3") {
-        console.log('ay')
-        res.send({url : '/JpkP0KKXlV78jx6fF1Yi'})
+// iICsZ9TpUQ
+// vVPfM9GcHD
+
+router.get('/api/code', function(req, res) {
+  console.log(req.query.code)
+  if (req.query.code == "badapples123") {
+    res.send({secret: "iICsZ9TpUQ"})
+  } else {
+    res.send("Whoops! Wrong code.")
+  }
+});
+
+router.post('/api/unlock', jsonParser, function(req, res) {
+    if (req.body == "vVPfM9GcHD") {
+        res.send({key: "b4d_4ppl3s_4tw"})
     }
 });
 
 router.post('/api/login', jsonParser, function(req, res) {
-  if (req.body.username == "ElbarenluvR" && req.body.password == "gl0r10usPurP0s3") {
+  if (req.body.key == "b4d_4ppl3s_4tw") {
       res.send({token : 'SlbCStyYUL1cg90HBOKkepDEPeLdKvkD'})
   } else {
     res.send({token : 'Fail'})
-  }
-});
-
-router.post('/api/account', jsonParser, function(req, res) {
-  if (req.body.cookie == "YWRtaW4=") {
-      res.send({flag : '<b>Flag:</b> tw1tt3r_tw0tt3r_:)', username : '<span style="font-size: 60px;">Welcome, <b>admin</b>!</span>'})
-  } else {
-    res.send({flag : 'Fail'})
   }
 });
 
